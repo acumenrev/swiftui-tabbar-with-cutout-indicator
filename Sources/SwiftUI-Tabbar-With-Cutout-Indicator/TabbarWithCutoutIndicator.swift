@@ -136,8 +136,11 @@ public struct TabbarWithCutoutIndicator<TabbarItemView: View, BackgroundView: Vi
     
     VStack {
         Spacer()
-        TabbarWithCutoutIndicator(backgroundView: Color.black, buttons: icons.map { Image(systemName: $0).padding() }, tabbarHeight: 60, selectedIndexHandler: { selectedIndex in
-            
+        TabbarWithCutoutIndicator(backgroundView: Color.black, 
+                buttons: icons.map { Image(systemName: $0).padding() }, 
+                tabbarHeight: 60, 
+                selectedIndexHandler: { selectedIndex in
+            // handle selection here
         })
     }
 }
