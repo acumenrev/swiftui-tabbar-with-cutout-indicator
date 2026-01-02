@@ -87,6 +87,7 @@ public struct TabbarWithCutoutIndicator<TabbarItemView: View, BackgroundView: Vi
                         ForEach(tabbarItems.indices, id: \.self) { index in
                             Button(action: {
                                 selectedIndex = index
+                                selectedIndexHandler(index)
                             }) {
                                 tabbarItems[index]
                             }
